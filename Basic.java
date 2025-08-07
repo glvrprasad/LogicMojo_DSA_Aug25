@@ -14,7 +14,6 @@ public class Basic {
 	private static boolean isPrimeUsingSqrt(int a) {
 		for(int i = 2;i<Math.sqrt(a);i++) {
 			if(a%i == 0) {
-				System.out.println("not a prime since it is getting perfect divided with other number than 1 or itself");
 				return false;
 			}
 		}
@@ -25,7 +24,6 @@ public class Basic {
 		
 		for(int i =2;i<a;i++) {
 			if(a%i == 0) {
-				System.out.println("not a prime since it is getting perfect divided with other number than 1 or itself");
 				return false;
 			}
 		}
@@ -57,3 +55,4 @@ public class Basic {
 	}
 
 }
+
