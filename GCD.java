@@ -1,12 +1,36 @@
 package mojo;
 
-public class GCD {
+public class Basic {
 	
 	public static void main(String[] args) {
 		int a = 60;
 		int b = 36;
 		System.out.println(findGCD(a,b));
 		System.out.println(findGCDUsingIterations(a,b));
+		System.out.println(isPrime(a));
+		System.out.println(isPrimeUsingSqrt(b));
+	}
+
+	private static boolean isPrimeUsingSqrt(int a) {
+		for(int i = 2;i<Math.sqrt(a);i++) {
+			if(a%i == 0) {
+				System.out.println("not a prime since it is getting perfect divided with other number than 1 or itself");
+				return false;
+			}
+		}
+		return true;
+	}
+
+	private static boolean isPrime(int a) {
+		
+		for(int i =2;i<a;i++) {
+			if(a%i == 0) {
+				System.out.println("not a prime since it is getting perfect divided with other number than 1 or itself");
+				return false;
+			}
+		}
+		
+		return true;
 	}
 
 	private static int findGCDUsingIterations(int a, int b) {
